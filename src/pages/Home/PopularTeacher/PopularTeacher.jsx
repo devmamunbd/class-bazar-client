@@ -13,7 +13,7 @@ const PopularTeacher = () => {
     useEffect(()=> {
         const fetchData = async()=> {
             const res = await useAxios.get('/');
-            setInstructor(res.data)
+            setInstructors(res.data)
         }
         fetchData()
     },[])
